@@ -1,11 +1,13 @@
 <div
   class="product-card"
+  style="border-radius: 10px 50px 10px 50px;"
   [ngClass]="{
     'in-stock':product.stockCount>10,
     'low-stock':product.stockCount<=10
   }"
 >
-  <img [src]="product.image || product.image" [alt]="product.name" />
+  <img [src]="product.image || product.image" [alt]="product.name" style="width: 320px;
+  height: 300px; border-radius: 10px 50px 10px 50px;"/>
 
   <h3>{{ product.name }}</h3>
 

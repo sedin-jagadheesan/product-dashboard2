@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url(dark-blue-galaxy-space-with-stars-well-use-as-astronomy-backgrou.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* height: 1200px;
+    width: 1200px; */
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
