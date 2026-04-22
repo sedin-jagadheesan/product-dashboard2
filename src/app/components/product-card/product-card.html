@@ -1,8 +1,8 @@
 <div
   class="product-card"
   [ngClass]="{
-    'in-stock': product.stockCount > 10,
-    'low-stock': product.stockCount <= 10
+    'in-stock':product.stockCount>10,
+    'low-stock':product.stockCount<=10
   }"
 >
   <img [src]="product.image || product.image" [alt]="product.name" />
