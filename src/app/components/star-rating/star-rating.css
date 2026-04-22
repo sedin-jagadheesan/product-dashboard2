@@ -1,0 +1,12 @@
+span {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.filled {
+  color: gold;
+}
+
+.empty {
+  color: gray;
+}

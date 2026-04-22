@@ -1,0 +1,5 @@
+<span *ngFor="let star of stars"
+      (click)="rate(star)"
+      [ngClass]="{'filled': star <= rating, 'empty': star > rating}">
+  ★
+</span>

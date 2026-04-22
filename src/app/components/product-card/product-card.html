@@ -1,0 +1,26 @@
+<div
+  class="product-card"
+  [ngClass]="{
+    'in-stock': product.stockCount > 10,
+    'low-stock': product.stockCount <= 10
+  }"
+>
+  <img [src]="product.image || product.image" [alt]="product.name" />
+
+  <h3>{{ product.name }}</h3>
+
+  <p>{{ product.description }}</p>
+
+  <p class="price">
+    {{ product.price | currencyFormatter }}
+  </p>
+
+  <p class="stock">Stock: {{ product.stockCount }}</p>
+
+  <div class="rating">
+    <app-star-rating
+      [rating]="product.rating"
+      (ratingChange)="updateRating($event)">
+    </app-star-rating>
+  </div>
+</div>
